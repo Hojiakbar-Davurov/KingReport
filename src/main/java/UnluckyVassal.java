@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -51,6 +52,7 @@ public class UnluckyVassal {
         }
 
         //show assistant
+        Arrays.sort(assistants);
         for (String assistant : assistants) {
             assistant = assistant.trim();
             for (int i = 0; i < countTab; i++) {
