@@ -4,7 +4,7 @@ import java.util.List;
 
 public class UnluckyVassal {
     int countTab = 1;
-    List<String> result = new ArrayList<>();
+    List<String> assistantsOnlyKing = new ArrayList<>();
 
     public void printReportForKing(List<String> pollResults) {
 
@@ -20,13 +20,13 @@ public class UnluckyVassal {
                     i++;
                 }
             }
-            if (i == 1) result.add(kingAssistant);
+            if (i == 1) assistantsOnlyKing.add(kingAssistant);
             i = 0;
         }
 
         //show inner assistant
-        Collections.sort(result);
-        for (String s : result) {
+        Collections.sort(assistantsOnlyKing);
+        for (String s : assistantsOnlyKing) {
             System.out.println("\t" + s);
             findAssistant(s, pollResults);
             countTab--;
